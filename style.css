@@ -1,0 +1,642 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "Graphik", Arial, Helvetica, sans-serif;
+    width: 100vw;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+ /* header  */
+
+img {
+    background-color: red;
+}
+
+/*  video  */
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+
+}
+
+video{
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.overlay {
+ position: absolute;
+ top: 0;
+ left:0 ; 
+ z-index: 2;
+ width: 100%;
+ height: 100% ;
+ opacity: .7;   
+ background:linear-gradient(113deg, rgba(255,0,0,0.7) 0%,rgba(0,5,120,0.7) 70%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff0000', endColorstr='#85000578',GradientType=1 );
+}
+
+
+.wrapper{
+    z-index: 5;
+    position: relative;
+    color: white;
+    
+}
+
+/* ---------------- barre lattera header ----------- */
+.barre_latteral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0vh 2.5vw 7vw -1vw ;
+    font-weight: bold;
+        
+}
+
+/*  ---------- logo -------------------- */
+.flex_logo{
+         display: flex; 
+         width: 66%;
+         justify-content: center;
+
+
+}
+.flex_logo img {
+    background: none;
+    margin-right: 2.5vw;
+}
+.flex_logo p {
+    align-self: center ;
+    margin-right: 25vw;
+    font-size: 1vw;
+}
+
+/* ------- lien header   ----- */
+.flex_link_header{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.flex_link_header a:hover{
+
+border-bottom: 2px solid white;
+
+}
+
+.flex_link_header a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.link{
+    width: 60%;
+
+}
+.pipe {
+    position: relative;
+    top: -2vh;
+    font-size: 2vw;
+    font-weight: lighter;
+}
+
+/* ---- input section  ----------- */
+.main_header {
+    text-align: center;
+
+}
+
+.input_header i.fa-search{
+    position: relative;
+    left: -6vw;
+    font-size: 1.4vw;
+    background-color: red;
+    padding: 1vw;
+    border-radius: 45px;
+    opacity: .8;
+
+}
+
+.input_header i.fas-search{
+    background-color: #f83131;
+}
+
+
+.presentation_header h1 {
+    font-weight: bold;
+    font-size: 3vw;
+    margin-top: 1.1vw;
+    margin-bottom: 1.4vw;
+
+}
+
+.presentation_header p {
+    font-weight: 200;
+    font-size: 1.3vw;
+
+}
+
+
+.input_header input {
+    width: 45%;
+    padding: 1.2vw;
+    border: 1px white solid;
+    border-radius: 30px;
+    margin-bottom: 2vh;
+    background: transparent;
+    font-size: 3vh;
+    margin-right: 7vw;
+    margin-left: 6vw;
+    
+    
+}
+
+/* --------- ex input --------------- */
+
+.input_header p {
+    position: relative;
+    left: -18vw;
+    font-size: 0.7vw;
+    font-weight: lighter;
+}
+
+
+/*  starssssssssssssssss */
+
+.stars {
+    color: #ffcc00;
+    margin-left: 0.5vw;
+
+}
+.flex_stars{
+    display: flex;
+    justify-content: center;
+}
+
+/* --------- avis --------------------- */
+.avis_stars{
+    margin-top: 14vh;
+    font-size: 1.2vw;
+
+}
+
+.avis img{
+    background: none;
+    width: 5%;
+    margin-top: 1.1vh;
+        margin-bottom: 4vh;
+        margin-right: 9vh ;
+    
+
+}
+
+/* -------------------- note -------------------- */
+.flex_stars p {
+    
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+.wrapper_formation {
+    display: flex;
+    flex-direction: column;
+}
+.wrapper_formation img {
+    width: 250px;
+    height: 180px;
+}
+
+.container_formation{
+    background: #F8F8F8;
+}
+
+.container_formation h2 {
+    text-align: center;
+    color: red;
+    font-weight: 800;
+    font-size: 1.5vw;
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 5vw;
+   
+}
+.flex_formation{
+    display: flex;
+    width: 84%;
+    margin-left: 8vw;
+    margin-top: 4vh;
+    margin-bottom: 25vh;
+    justify-content: space-between;
+
+}
+.container_financement{
+    background: #EDEDED;
+
+}
+
+.flex_formation > div {
+padding-top: 7vh;
+padding-right: 2vw;
+padding-left: 2vw;
+margin-left: .5vw;
+
+
+}
+
+
+ h4 {
+    font-weight: 600;
+    color : #f83131;
+    margin-bottom : .5vw;
+}
+.flex_formation > div h3 {
+    margin-top: 1vh;
+    font-weight: 900;
+    color:      #222;
+    font-size: 1.4vw;
+    margin-bottom : 3vw;
+    height: 25%;
+}
+
+.financement_title{
+    text-align: center;
+    padding-top: 4vw;
+}
+
+.financement_title h2 {
+        font-weight: bold;
+        font-size: 1.5vw;
+        margin-bottom: 1vw;
+        font-family: "Graphik", Arial, Helvetica, sans-serif;
+
+}
+
+.financement_title p {
+    font-size: 1.5vw;
+}
+
+
+/*  */
+.container_digital{
+    background: #F8F8F8;
+
+}
+.flex_digital {
+    display: flex;
+    margin: 0 8vw;
+    padding-top: 6vw;
+    
+}
+
+
+.flex_img_digital{
+    width: 50vw;
+    text-align: center;
+
+}
+
+.flex_text_digital{
+    width: 50vw;
+}
+
+.flex_img_digital > img {
+    width: 60%;
+    height: 84%;
+    background: none;
+}
+
+
+
+
+.elem_circle_red{
+    color: #f83131;
+    border: 2px solid #f83131;
+    display: inline;
+    padding: 0.3vw;
+     border-radius: 15px;
+     font-weight: bold;
+     margin-right: .2vw;
+}
+
+.elem_circle_red:hover {
+    color: rgba(0,5,120,0.7);
+    border: 2px solid rgba(0,5,120,0.7);
+}
+
+
+
+.container_red_key{
+    width: 99%;
+    margin-top: 1.1vw;
+    font-size: .7vw;
+    margin-bottom: 1.9vw;
+
+
+}
+
+
+.cta{
+    background: #f83131;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.8vw;
+    font-size: .9vw;
+    position: relative;
+    left: 0vw;
+    top: 5vw;
+
+}
+
+
+
+
+.flex_text_digital h3 {
+    font-weight: 800;
+    font-size: 1.7vw;
+
+
+}
+
+.flex_text_digital > p {
+    line-height: 160%;
+    color: #606060;
+    font-family: Graphik;
+
+}
+
+
+
+/*    2 box container and flex .  */
+
+
+.container_2box { 
+    display: flex;
+    background: #F8F8F8;
+    justify-content: space-around;
+}
+
+
+
+/*  container global  */
+.container_1box{
+    background: #ffff;
+    padding: 3vw;
+    border: 1px solid #ffffff;
+}
+
+
+/* image of box */
+.container_1box img {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 2vw;
+}
+
+.container_1box h3 {
+    font-weight: 900;
+    font-size: 1.6vw;
+    height: 20%;
+}
+
+.container_1box h4 {
+    margin-bottom: 1vw;
+}
+
+.container_1box p{
+    color: #aaaaaa;
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+/*  la box à droite */
+.right_box{
+width: 38%;
+}
+
+/* box gauche */
+.left_box{
+width: 38%;
+
+}
+
+/*information plus  */
+
+#plus{
+    width: 9%;
+    background-color: #da2626;
+}
+
+#plus .fa {
+    color: white ;  
+    font-size: 3vw;
+    text-align: center;
+    position: relative;
+    top: 18vw;
+    left: 3vw;
+    font-weight: 600;
+    padding-bottom: 5vw;
+}
+
+#plus:hover{
+     background-color: #000578;
+}
+
+.container_univers_m2i{
+    display: flex;
+    background:#f8f8f8 ;
+    padding-top: 5vw;
+    padding: 0 15vw;
+
+
+}
+
+.container_univers_m2i img {
+ 
+    width: 25%;
+    background: none;
+    margin-bottom: 1vw;
+    height: 16%;
+}
+.container_univers_m2i h3{
+    font-size: 1.5vw;
+}
+
+.container_univers_m2i p {
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+.box_left_univers{
+    width: 30%;
+    height: 25vw;
+    padding: 2vw;
+
+
+}
+
+.box_left_univers h3{
+    font-weight: 800;
+    height: 15%;
+
+
+}
+
+
+
+
+.box_middle_left_univers{
+    width: 25%;
+    height: 25vw;
+    padding: 2vw;
+
+
+}
+
+.box_middle_left_univers h3{
+    height: 15%;
+    font-weight: 800;
+
+}
+
+.box_middle_left_univers p{
+    height: 28%;
+}
+
+
+
+
+.box_midlle_right_univers{
+    width: 25%;
+    height: 25vw;
+    padding: 2vw;
+
+}
+.box_midlle_right_univers p {
+    height: 28%;
+
+}
+
+.box_midlle_right_univers h3 {
+    height: 15%;
+    font-weight: 800;
+
+}
+.box_right_univers{
+    width: 25%;
+    height: 25vw;
+    padding: 2vw;
+}   
+
+.box_right_univers h3 {
+    height: 15%;
+    font-weight: 800;
+
+}
+.box_right_univers p {
+    height: 28%;
+
+}
+
+/*  surchage taille boite sur 4 au lieu de trois */
+.right_box2{
+    width: 25%;
+    }
+    
+    /* box gauche */
+    .left_box2{
+    width: 25%;
+    
+    }
+
+  .middle_box2{
+      width: 25%;
+  }  
+
+.map_container img{
+    width: 100%;
+
+}
+/*   contact  */
+
+.contact_container{
+    position: relative;
+    width: 100%;
+    height: 25vw;
+}
+
+.contact_container h3 {
+    position: absolute;
+    top: 10vw;
+    left: 7vw;
+    color: white;
+    font-weight: 900;
+    font-size: 2vw;
+    width: 37%;
+    line-height: 120%;
+}
+
+.contact_container a {
+    position: absolute;
+    top: 14vw;
+    left: 80vw;
+}
